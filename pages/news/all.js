@@ -34,7 +34,7 @@ function dismissAlert(e){
        document.querySelector('.alert').style.display = 'none'
   }
 
-function Index () {
+function Index() {
    const [data, setData] = useState({posts:[]})
     const [msg, setMsg] = useState('')
     useEffect(()=>{

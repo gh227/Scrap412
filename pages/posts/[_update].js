@@ -8,7 +8,7 @@ import {getSingleUpdated} from '../../lib/db'
 
 export async function getServerSideProps(context) {
     await middleware.apply(context.req, context.res);
-   const single = await getSingleUpdated(context.req, context.params._update, '_id');
+   const single = await getSingleUpdated(context.req, context.params._update, 'phoneNumber');
     if (!single) context.res.statusCode = 404;
     return {props:{single}}
   }
