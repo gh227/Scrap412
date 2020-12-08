@@ -15,7 +15,7 @@ const All =(props)=>{
             <tr className='table-light'>
                 <td>{post.phoneNumber}</td>
                 <td>
-                <Link href="/posts/[_update]" as={`/posts/${post._id}`}>
+                <Link href="/posts/[_update]" as={`/posts/${post.phoneNumber}`}>
                     <a className="btn btn-success">Edit</a>
                 </Link>
                 </td>
